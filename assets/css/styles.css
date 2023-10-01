@@ -1,0 +1,395 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #1ebfc1;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: "Poppins", sans-serif;
+}
+
+/* ========== Common ========== */
+a {
+    text-decoration: none;
+}
+
+.main-content {
+    width: 1170px;
+    max-width: calc(100% - 48px);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0 16px;
+    text-align: center;
+    min-width: 186px;
+    line-height: 68px;
+    border-radius: 14px;
+    border: 1px solid var(--primary-color);
+    color: #fff;
+    background-color: var(--primary-color);
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+.btn:hover {
+    opacity: 0.9;
+    cursor: pointer;
+}
+
+.heading {
+    color: #0d1111;
+    font-weight: 700;
+}
+
+.heading.lv1 {
+    font-size: 62px;
+    line-height: 1.16; /* 116.129% */
+}
+
+.heading.lv2 {
+    font-size: 42px;
+    line-height: 1.33; /* 133.333% */
+}
+/* ========== Header ========== */
+.header {
+    padding: 52px 0 10px;
+}
+
+.header .body {
+    display: flex;
+    align-items: center;
+}
+
+.header .navbar {
+    margin-left: auto;
+}
+
+.navbar .list {
+    display: flex;
+}
+
+.navbar .list a {
+    color: #2f3a3b;
+    font-size: 1.6rem;
+    padding: 8px 20px;
+}
+
+.navbar .item a:hover,
+.navbar .item.active a {
+    color: #2f3a3b;
+    /* font-weight: 600; */
+    text-shadow: 1px 0 0 #2f3a3b;
+}
+
+.header .action {
+    margin-left: 157px;
+}
+
+.header .body .span {
+    color: #494949;
+    font-size: 1.6rem;
+}
+
+.header .cta-btn {
+    min-width: 108px;
+    line-height: 48px;
+    margin-left: 24px;
+}
+
+/* ========== Hero ========== */
+.hero {
+    padding: 40px 0 79px;
+}
+
+.hero .body {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hero .content-block {
+    margin-top: 93px;
+    width: 45%;
+}
+
+.hero .content-block .title {
+    color: #767e7e;
+    font-size: 1.4rem;
+    line-height: 1.5;
+}
+
+.hero .content-block .heading {
+    margin-top: 18px;
+}
+
+.hero .content-block .desc {
+    width: 374px;
+    margin-top: 46px;
+    color: #9da6a5;
+    font-size: 1.8rem;
+    line-height: 1.78; /* 177.778% */
+}
+
+.hero .content-block .btn {
+    margin-top: 52px;
+}
+
+.hero .media-block {
+    position: relative;
+    flex: 1;
+}
+
+.hero .media-block .image {
+    width: 90%;
+    height: 631px;
+    display: block;
+    margin-left: auto;
+    object-fit: cover;
+    border-radius: 18px;
+}
+
+.media-block .courses {
+    border-radius: 18px;
+    background: #fefefd;
+    box-shadow: 0px 10px 80px 0px rgba(0, 0, 0, 0.05);
+    padding: 18px 25px;
+    position: absolute;
+    left: 0;
+    top: 149px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    width: 157px;
+}
+
+.media-block .courses span {
+    background-color: #ff8282;
+    border-radius: 6px 3px 3px 6px;
+}
+
+.media-block .courses img {
+    padding: 28px 4px 8px;
+}
+
+.media-block .courses .desc {
+    color: #0d1111;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+.media-block .schedule {
+    padding: 16px 25px 23px;
+    position: absolute;
+    left: 0;
+    bottom: 46px;
+    border-radius: 24px;
+    background: #fff;
+    box-shadow: 0px 10px 80px 0px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+}
+
+.media-block .schedule .desc {
+    color: #0d1111;
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 4px;
+}
+
+.media-block .students-block {
+    position: absolute;
+    bottom: 41px;
+    right: 45px;
+}
+
+.students-block .avatar-wrap {
+    display: flex;
+}
+
+.students-block {
+    padding: 17px 35px;
+    border-radius: 24px;
+    background: #fefefd;
+    box-shadow: 0px 12px 80px 0px rgba(0, 0, 0, 0.05);
+}
+
+.avatar-wrap .avatar {
+    margin-top: 8px;
+    width: 33px;
+    height: 33px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.students-block .desc {
+    color: #0d1111;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.avatar-wrap .avatar + .avatar {
+    margin-left: -4px;
+}
+
+/* ========== Features ========== */
+.features {
+    padding: 65px 0;
+    margin-top: 65px;
+}
+
+.features .main-content {
+    width: 1024px;
+    margin-right: auto;
+}
+
+.feature-top {
+    width: 590px;
+}
+
+.features .title {
+    color: #767e7e;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.features .heading {
+    margin: 18px 0;
+}
+
+.features .desc {
+    color: #767e7e;
+    font-size: 1.8rem;
+    line-height: 1.5;
+}
+
+.icon-link {
+    margin-top: 80px;
+    display: inline-block;
+    padding: 29px 27px;
+    background-color: #ffc147;
+    border-radius: 16px;
+}
+
+.features .list {
+    display: flex;
+    gap: 210px;
+}
+
+.features .item .heading {
+    margin-top: 26px;
+    color: #0d1111;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.features .item .desc {
+    color: #9da6a5;
+    font-size: 1.6rem;
+    line-height: 1.69; /* 168.75% */
+}
+
+.features .item:nth-child(2) .icon-link {
+    background-color: #ff947a;
+}
+
+.features .item:nth-child(3) .icon-link {
+    background-color: #bf83ff;
+}
+
+/* ========== Populars ========== */
+.popular .main-content {
+    width: 1171px;
+}
+
+.popular .list {
+    margin-top: 79px;
+    gap: 47px;
+}
+
+.popular .item {
+    position: relative;
+    width: 33.33%;
+}
+
+.popular .item .thumb {
+    width: 100%;
+    height: 393px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.popular .item .thumb:hover {
+    opacity: 0.9;
+    background: #d0efed;
+}
+
+.popular .info {
+    position: absolute;
+    right: 17px;
+    left: 17px;
+    bottom: -124px;
+    padding: 18px 25px 29px;
+    border-radius: 8px;
+    background: #fff;
+    box-shadow: 0px 16px 90px 0px rgba(0, 0, 0, 0.05);
+}
+
+.popular .info .title {
+    color: #0d1111;
+    font-size: 2.2rem;
+    font-weight: 700;
+}
+
+.popular .info .price {
+    margin-top: 16px;
+    color: #767e7e;
+    font-size: 1.6rem;
+}
+.popular .info .price strong {
+    color: #0d1111;
+    font-size: 2.2rem;
+    font-weight: 700;
+}
+
+.popular .info .desc {
+    color: #9da6a5;
+    font-size: 1.4rem;
+}
+
+.popular .info .stat {
+    margin-top: 18px;
+    display: flex;
+}
+
+.popular .stat .quantity {
+    color: #9da6a5;
+    font-size: 1.4rem;
+}
+
+.popular .stat .quantity:before {
+    content: "";
+    top: -2px;
+    margin-right: 10px;
+    position: relative;
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #1ebfc1;
+}
+
+.popular .stat .quantity:nth-child(2):before {
+    margin-left: 10px;
+}
